@@ -108,16 +108,17 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 TARGET_RIL_VARIANT := caf
 
 # Sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
+##BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/qcom/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/qcom/sepolicy/public
 
+
 # Treble
-BOARD_VNDK_RUNTIME_DISABLE := true
-BOARD_VNDK_VERSION := current
-PRODUCT_COMPATIBILITY_MATRIX_LEVEL_OVERRIDE := 27
-PRODUCT_FULL_TREBLE_OVERRIDE := true
+#BOARD_VNDK_RUNTIME_DISABLE := true
+#BOARD_VNDK_VERSION := current
+#PRODUCT_COMPATIBILITY_MATRIX_LEVEL_OVERRIDE := 27
+#PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/sdm845-common/BoardConfigVendor.mk
